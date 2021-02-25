@@ -1,3 +1,24 @@
-<form>
-<h2>Hello</h2>
+<!DOCTYPE html> 
+
+<form method="POST" action="/team">
+  <h1>Create a Team and Heroes</h1>
+    <label for='team_name'>Team Name: </label>
+    <input type='text' id='team_name' name=team[:team_name]><br>
+    <label for='ju'>Team Motto: </label>
+    <input type='text' id='ju' name=team[:motto]><br>
+    <br> 
+
+  <h1>Hero 1</h1> 
+    <label for="hero_name_1">Hero's Name: </label>
+    <input type='text' id='hero_name_1' name=team[:hero][][:name]> 
+    <label for="power_1">Hero's Power: <label>
+    <input type="text" id="power_1" name=team[:hero][][:power]>
+    <label for="biography_1">Hero's Biography: </label>
+    <input type="text" id="biography_1" name=team[:hero][][:biography]>
+    <br>
+
+  <input type="submit" id="Submit">
 </form> 
+
+
+
