@@ -2,6 +2,8 @@
 source "https://rubygems.org"
 
 # gem "rails"
+gem 'byebug', '~> 9.0', '>= 9.0.5'
+
 
 gem 'sinatra', '1.4.6'
 gem 'rake', '12.3.3'
