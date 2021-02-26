@@ -5,11 +5,13 @@ class App < Sinatra::Base
     set :views, Proc.new { File.join(root, "../views/") }
 
     get '/' do 
-     binding.pry
-      'hello'#erb :super_hero 
+      erb :super_hero 
     end 
 
-    post '/team' do
+    post '/teams' do
+      binding.pry 
+
+      @team = params
       erb :team
     end 
 

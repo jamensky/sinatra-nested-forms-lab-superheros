@@ -1,23 +1,40 @@
 <!DOCTYPE html> 
 
-<form method="POST" action="/team">
-  <h1>Create a Team and Heroes</h1>
+<form method="POST" action="/teams">
+  <h1>Create a Team and Heroes!</h1>
     <label for='team_name'>Team Name: </label>
-    <input type='text' id='team_name' name=team[:team_name]><br>
+    <input type='text' id='team_name' name=team[name]><br>
     <label for='ju'>Team Motto: </label>
-    <input type='text' id='ju' name=team[:motto]><br>
+    <input type='text' id='ju' name=team[motto]><br>
     <br> 
 
   <h1>Hero 1</h1> 
-    <label for="hero_name_1">Hero's Name: </label>
-    <input type='text' id='hero_name_1' name=team[:hero][][:name]> 
-    <label for="power_1">Hero's Power: <label>
-    <input type="text" id="power_1" name=team[:hero][][:power]>
-    <label for="biography_1">Hero's Biography: </label>
-    <input type="text" id="biography_1" name=team[:hero][][:biography]>
+    <label for="member1_name">Hero's Name: </label>
+    <input type='text' id='member1_name' name=team[][member1_name]> 
+    <label for="member1_power">Hero's Power: <label>
+    <input type="text" id="member1_power" name=team[:hero][][power]>
+    <label for="member1_bio">Hero's Biography: </label>
+    <input type="text" id="member1_bio" name=team[:hero][][bio]>
+    <br>
+    <h1>Hero 2</h1> 
+    <label for="member2_name">Hero's Name: </label>
+    <input type='text' id='member2_name' name=team[:hero][][name]> 
+    <label for="member2_power">Hero's Power: <label>
+    <input type="text" id="member2_power" name=team[:hero][][power]>
+    <label for="member2_bio">Hero's Biography: </label>
+    <input type="text" id="member2_bio" name=team[:hero][][bio]>
+    <br>
+    <h1>Hero 3</h1> 
+    <label for="member3_name">Hero's Name: </label>
+    <input type='text' id='member3_name' name=team[:hero][][:name]> 
+    <label for="member3_power">Hero's Power: <label>
+    <input type="text" id="member3_power" name=team[:hero][][:power]>
+    <label for="member3_bio">Hero's Biography: </label>
+    <input type="text" id="member3_bio" name=team[:hero][][:biography]>
     <br>
 
-  <input type="submit" id="Submit">
+
+  <input type="submit" id="submit">
 </form> 
 
 
